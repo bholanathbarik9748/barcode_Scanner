@@ -21,6 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="384dp"
         android:layout_height="248dp"
         android:layout_alignParentStart="true"
@@ -34,10 +35,202 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.254">
+        app:layout_constraintVertical_bias="0.252">
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/yeseva_one"
+            android:foregroundGravity="center_vertical|center|center_horizontal"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/scan_a_barcode"
+            android:textColor="#FFFFFF"
+            android:textSize="29sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintVertical_bias="0.0" />
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/scan_icon"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/x0002b"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="50sp"
+            android:textStyle="normal"
+            app:backgroundTint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="323dp"
+            android:layout_height="36dp"
+            android:fontFamily="@font/roboto_light"
+            android:foregroundGravity="center_vertical|center|center_horizontal"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="@string/you_can_upload_a_barcode_by_importing_or_scanning_with_camara"
+            android:textColor="#ECE6E6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.205" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="410dp"
+        android:layout_height="82dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.129">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/lock"
+                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteY="400dp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="54dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="-40dp"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/lateef"
+                android:text="@string/privacy"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="436dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="107dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="-55dp"
+                android:layout_marginLeft="-55dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lateef"
+                android:text="@string/leases_and_insurance"
+                android:textColor="#6A6868"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="436dp" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="30dp"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/file"
+                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteY="400dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="104dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="-40dp"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/lateef"
+                android:text="@string/terms_of_servics"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="436dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="115dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="-104dp"
+                android:layout_marginLeft="-55dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lateef"
+                android:text="@string/agreements_privacy_polices"
+                android:textColor="#6A6868"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="436dp" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="30dp"
+                android:contentDescription="@string/todo"
+                app:srcCompat="@drawable/agree"
+                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteY="400dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="104dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="-40dp"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/lateef"
+                android:text="Agree Condition"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="436dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="125dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="-104dp"
+                android:layout_marginLeft="-55dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/lateef"
+                android:text="We not store your scan Model"
+                android:textColor="#6A6868"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="436dp" />
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
