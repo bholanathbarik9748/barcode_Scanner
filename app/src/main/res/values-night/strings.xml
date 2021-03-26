@@ -5,7 +5,11 @@
     <string name="you_can_upload_a_barcode_by_importing_or_scanning_with_camara">You can upload a barcode by importing or scanning with camara</string>
     <string name="privacy">Privacy</string>
     <string name="leases_and_insurance">leases and insurance</string>
-    <string name="todo">TODO</string>
     <string name="terms_of_servics">Terms of Servics</string>
     <string name="agreements_privacy_polices"><![CDATA[agreements & privacy polices]]></string>
+    <string name="agree_condition">Agree Condition</string>
+    <string name="we_not_store_your_scan_model">We not store your scan Model</string>
+    <string name="_22_3_2021">22/3/2021</string>
+    <string name="worker_clause">Worker clause</string>
+    <string name="todo">TODO</string>
 </resources>
