@@ -14,4 +14,6 @@
     <string name="worker_clause">Worker clause</string>
     <string name="todo">TODO</string>
     <string name="button">Button</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="textview">TextView</string>
 </resources>
