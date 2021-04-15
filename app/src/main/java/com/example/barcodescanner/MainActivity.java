@@ -16,17 +16,22 @@ import com.google.zxing.integration.android.IntentResult;
 
 public class MainActivity extends AppCompatActivity {
     private ImageView imageView, imageView1, imageView2;
-    private Button button;
+    private Button button, button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        Id initialization
         imageView = findViewById(R.id.imageView6);
         imageView1 = findViewById(R.id.imageView9);
         imageView2 = findViewById(R.id.imageView12);
         imageView2 = findViewById(R.id.imageView12);
         button = findViewById(R.id.button);
+        button1 = findViewById(R.id.button1);
+
+//        OnClickListener List
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,8 +60,16 @@ public class MainActivity extends AppCompatActivity {
                 prv3();
             }
         });
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                prv4();
+            }
+        });
     }
 
+    //    method OnClickListener
     private void prv() {
         Intent intent = new Intent(this, privacy.class);
         startActivity(intent);
@@ -81,8 +94,13 @@ public class MainActivity extends AppCompatActivity {
         intent.initiateScan();
     }
 
+    private void prv4() {
+        Intent intent = new Intent(MainActivity.this, epPage.class);
+        startActivity(intent);
+    }
 
-    protected void OnActivityResult(int req_code, int res_code, Intent data) {
+    //    Scanner Button Code and Messager
+    protected void onActivityResult(int req_code, int res_code, Intent data) {
         IntentResult res = IntentIntegrator.parseActivityResult(req_code, res_code, data);
         if (res != null) {
             if (res.getContents() != null) {
